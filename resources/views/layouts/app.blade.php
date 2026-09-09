@@ -33,17 +33,17 @@
             <div class="nav flex-column mt-2">
 
                 <a href="{{ route('categories.index') }}"
-                   class="nav-link text-white rounded py-2 px-3 mb-1">
+                    class="nav-link text-white rounded py-2 px-3 mb-1">
                     Kategori Barang
                 </a>
 
-                <a href="#"
-                   class="nav-link text-white rounded py-2 px-3 mb-1">
+                <a href="{{ route('items.index') }}"
+                    class="nav-link text-white rounded py-2 px-3 mb-1">
                     Data Barang
                 </a>
 
                 <a href="#"
-                   class="nav-link text-white rounded py-2 px-3 mb-1">
+                    class="nav-link text-white rounded py-2 px-3 mb-1">
                     Barang Masuk
                 </a>
 

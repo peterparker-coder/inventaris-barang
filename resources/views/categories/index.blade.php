@@ -21,20 +21,7 @@
 </div>
 
 
-@if(session('success'))
 
-    <div class="alert alert-success alert-dismissible fade show border-0 shadow-sm">
-
-        {{ session('success') }}
-
-        <button type="button"
-                class="btn-close"
-                data-bs-dismiss="alert">
-        </button>
-
-    </div>
-
-@endif
 
 
 <div class="card border-0 shadow-sm">
