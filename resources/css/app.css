@@ -1,0 +1,17 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+body {
+    background-color: #f4f6f9;
+}
+
+.nav-link {
+    transition: 0.2s;
+}
+
+.nav-link:hover {
+    background-color: #343a40;
+}
+
+.card {
+    border-radius: 10px;
+}
