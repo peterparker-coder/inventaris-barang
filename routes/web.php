@@ -6,6 +6,8 @@ use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\ItemController;
 use App\Http\Controllers\BarangMasukController;
 use App\Http\Controllers\BarangKeluarController;
+use App\Http\Controllers\RiwayatController;
+
 
 Route::get('/', function () {
     return redirect()->route('categories.index');
@@ -21,3 +23,6 @@ Route::resource('barang-masuk', BarangMasukController::class)
 
     Route::resource('barang-keluar', BarangKeluarController::class)
     ->except(['show']);
+
+    Route::get('/riwayat', [RiwayatController::class, 'index'])
+    ->name('riwayat.index');

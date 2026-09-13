@@ -52,7 +52,7 @@
                     Barang Keluar
                 </a>
 
-                <a href="#"
+                <a href="{{ route('riwayat.index') }}"
                     class="nav-link text-white rounded py-2 px-3">
                     Riwayat
                 </a>
