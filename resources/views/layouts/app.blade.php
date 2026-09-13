@@ -47,7 +47,7 @@
                     Barang Masuk
                 </a>
 
-                <a href="#"
+                <a href="{{ route('barang-keluar.index') }}"
                     class="nav-link text-white rounded py-2 px-3 mb-1">
                     Barang Keluar
                 </a>
