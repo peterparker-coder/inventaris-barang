@@ -7,11 +7,12 @@ use App\Http\Controllers\ItemController;
 use App\Http\Controllers\BarangMasukController;
 use App\Http\Controllers\BarangKeluarController;
 use App\Http\Controllers\RiwayatController;
+use App\Http\Controllers\DashboardController;
 
 
-Route::get('/', function () {
-    return redirect()->route('categories.index');
-});
+
+Route::get('/', [DashboardController::class, 'index'])
+    ->name('dashboard');
 
 Route::resource('categories', CategoryController::class)
     ->except(['show']);

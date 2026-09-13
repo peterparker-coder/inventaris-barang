@@ -2,6 +2,7 @@
 
 body {
     background-color: #f4f6f9;
+    font-family: Arial, sans-serif;
 }
 
 .nav-link {
@@ -13,5 +14,22 @@ body {
 }
 
 .card {
-    border-radius: 10px;
+    border-radius: 12px;
+}
+
+.table {
+    margin-bottom: 0;
+}
+
+.btn {
+    border-radius: 7px;
+}
+
+.form-control,
+.form-select {
+    border-radius: 7px;
+}
+
+header {
+    min-height: 70px;
 }

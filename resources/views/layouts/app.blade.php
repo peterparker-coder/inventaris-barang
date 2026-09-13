@@ -15,10 +15,10 @@
 <div class="d-flex min-vh-100">
 
     <!-- SIDEBAR -->
-    <aside class="bg-dark text-white" style="width: 240px;">
+    <aside class="bg-dark text-white shadow" style="width: 240px;">
 
         <div class="p-4 border-bottom border-secondary">
-            <h4 class="fw-bold mb-1">Inventaris</h4>
+            <h4 class="fw-bold mb-1">Inventaris Barang</h4>
             <small class="text-secondary">
                 Sistem Pengelolaan Barang
             </small>
@@ -31,29 +31,33 @@
             </small>
 
             <div class="nav flex-column mt-2">
+                <a href="{{ route('dashboard') }}"
+                class="nav-link text-white rounded py-2 px-3 mb-1 {{ request()->routeIs('dashboard') ? 'bg-primary' : '' }}">
+                    Dashboard
+                </a>
 
                 <a href="{{ route('categories.index') }}"
-                    class="nav-link text-white rounded py-2 px-3 mb-1">
+                class="nav-link text-white rounded py-2 px-3 mb-1 {{ request()->routeIs('categories.*') ? 'bg-primary' : '' }}">
                     Kategori Barang
                 </a>
 
                 <a href="{{ route('items.index') }}"
-                    class="nav-link text-white rounded py-2 px-3 mb-1">
+                class="nav-link text-white rounded py-2 px-3 mb-1 {{ request()->routeIs('items.*') ? 'bg-primary' : '' }}">
                     Data Barang
                 </a>
 
                 <a href="{{ route('barang-masuk.index') }}"
-                    class="nav-link text-white rounded py-2 px-3 mb-1">
+                class="nav-link text-white rounded py-2 px-3 mb-1 {{ request()->routeIs('barang-masuk.*') ? 'bg-primary' : '' }}">
                     Barang Masuk
                 </a>
 
                 <a href="{{ route('barang-keluar.index') }}"
-                    class="nav-link text-white rounded py-2 px-3 mb-1">
+                class="nav-link text-white rounded py-2 px-3 mb-1 {{ request()->routeIs('barang-keluar.*') ? 'bg-primary' : '' }}">
                     Barang Keluar
                 </a>
 
                 <a href="{{ route('riwayat.index') }}"
-                    class="nav-link text-white rounded py-2 px-3">
+                class="nav-link text-white rounded py-2 px-3 {{ request()->routeIs('riwayat.*') ? 'bg-primary' : '' }}">
                     Riwayat
                 </a>
 
